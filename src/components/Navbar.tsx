@@ -1,4 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function Navbar() {
   const today = new Date().toLocaleDateString("en-US", {
@@ -12,7 +20,9 @@ export default function Navbar() {
     <header className="w-full">
       {/* Top section with site name, tagline, and date */}
       <div className="text-center py-6 bg-white">
-        <h1 className="text-4xl font-serif font-bold">The Dragon News</h1>
+        <h1 className="text-4xl font-serif font-bold text-black italic">
+          The Dragon News
+        </h1>
         <p className="text-gray-500 mt-1">Journalism Without Fear or Favour</p>
         <p className="text-sm font-semibold text-gray-700 mt-1">{today}</p>
       </div>
@@ -22,9 +32,7 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center px-4 py-3">
           {/* Logo */}
           <div className="flex items-center gap-2 text-red-600 font-bold text-lg">
-            <span className="bg-white text-black px-2 py-1 rounded-sm">
-              NEWS
-            </span>
+            <Image src="/assets/logo.png" alt="Logo" width={100} height={120} />
           </div>
 
           {/* Menu items */}
