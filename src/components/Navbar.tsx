@@ -16,6 +16,15 @@ export default function Navbar() {
     day: "numeric",
   });
 
+  const navMenu = [
+    { name: "Home", path: "/" },
+    { name: "Pages", path: "/pages" },
+    { name: "Category", path: "/category" },
+    { name: "News", path: "/news" },
+    { name: "Post", path: "/post" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <header className="w-full">
       {/* Top section with site name, tagline, and date */}
@@ -37,24 +46,16 @@ export default function Navbar() {
 
           {/* Menu items */}
           <ul className="flex gap-6 text-sm">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/pages">Pages</Link>
-            </li>
-            <li>
-              <Link href="/category">Category</Link>
-            </li>
-            <li>
-              <Link href="/news">News</Link>
-            </li>
-            <li>
-              <Link href="/post">Post</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
+            {navMenu.map((item) => (
+              <li key={item.name}>
+                <Link
+                  href={item.path}
+                  className="hover:text-red-600 transition duration-300"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
 
           {/* Social icons */}
