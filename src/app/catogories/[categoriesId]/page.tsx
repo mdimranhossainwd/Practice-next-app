@@ -1,3 +1,3 @@
-export default function DynamicNews() {
-  return <h2>Hello World</h2>;
+export default function DynamicNews({ params, searchParams }) {
+  return <h2 className="text-black">Hello World {searchParams?.category}</h2>;
 }

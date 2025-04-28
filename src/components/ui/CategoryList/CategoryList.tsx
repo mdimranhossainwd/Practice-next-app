@@ -21,7 +21,7 @@ export default async function CategoryList() {
             borderRadius: 2,
           }}
         >
-          <Link href={`/category/${category.name}`}>
+          <Link href={`/catogories/news?category=${category.name}`}>
             <Stack spacing={2}>{category?.name}</Stack>
           </Link>
         </Box>
