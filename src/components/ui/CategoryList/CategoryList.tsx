@@ -5,7 +5,7 @@ export default async function CategoryList() {
   const { data: allCategory } = await getAllCategory();
   // console.log(data);
   return (
-    <Box className="text-black">
+    <Box className="text-black bg-gray-100 p-4 rounded-lg">
       <Typography variant="h5" marginBottom={2} fontWeight={700} gutterBottom>
         Categories
       </Typography>
@@ -21,7 +21,9 @@ export default async function CategoryList() {
             borderRadius: 2,
           }}
         >
-          <Link href={`/catogories/news?category=${category.name}`}>
+          <Link
+            href={`/catogories/news?category=${category.name.toLowerCase()}`}
+          >
             <Stack spacing={2}>{category?.name}</Stack>
           </Link>
         </Box>
