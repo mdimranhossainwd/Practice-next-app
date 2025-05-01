@@ -54,6 +54,7 @@ export default function LatestCard() {
                   width={800}
                   height={600}
                   alt="Banner Logo"
+                  className="rounded-lg"
                 />
               </CardMedia>
               <CardContent>
@@ -64,8 +65,8 @@ export default function LatestCard() {
                   Bitcoin News Today
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  By <span className="italic font-semibold">Md Imran</span> -
-                  20-4-2025
+                  By <span className="italic font-semibold">Awlad Hossain</span>{" "}
+                  - 20-4-2025
                 </Typography>
                 <Typography
                   className="py-2"
@@ -95,6 +96,7 @@ export default function LatestCard() {
                   width={800}
                   height={600}
                   alt="Banner Logo"
+                  className="rounded-lg"
                 />
               </CardMedia>
               <CardContent>
@@ -105,8 +107,8 @@ export default function LatestCard() {
                   Bitcoin News Today
                 </Typography>
                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  By <span className="italic font-semibold">Md Imran</span> -
-                  20-4-2025
+                  By <span className="italic font-semibold">Awlad Hossain</span>{" "}
+                  - 20-4-2025
                 </Typography>
                 <Typography
                   className="py-2"
