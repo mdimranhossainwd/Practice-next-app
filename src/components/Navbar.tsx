@@ -19,7 +19,7 @@ export default function Navbar() {
   const navMenu = [
     { name: "Home", path: "/" },
     { name: "Pages", path: "/pages" },
-    { name: "Category", path: "/catogories/news" },
+    { name: "Category", path: `/catogories/news?category=all-news` },
     { name: "News", path: "/news" },
     { name: "Post", path: "/post" },
     { name: "Contact", path: "/contact" },
